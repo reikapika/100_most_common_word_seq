@@ -7,11 +7,20 @@ This program is built to return the 100 most common three-word sequences in one 
 
 # How to Run It #  
 
-* pipe in text content over to the python script using cat command. 
-    (e.g. cat moby-dick.txt | python3 get_three_word_sequences.py)
+### Normal Command Line ###
+* pipe in text content over to the python script using cat command <br>
+    `cat moby-dick.txt | python3 get_three_word_sequences.py`
 
-* pass in one or more text file as parameters in command line
-    (e.g. python3 moby_dick.txt moby_dick2.txt moby_dick3.txt)
+* pass in one or more text file as parameters in command line <br>
+    `python3 moby_dick.txt moby_dick2.txt moby_dick3.txt`
+
+### Run in a Docker Container ###
+
+* [Install Docker](https://www.docker.com/get-started/)
+* Build a docker image <br>
+    `docker build -t [tag_name] [image_name] .`
+* Run it in a docker container
+    `docker run [image_name]`
 
 # Bugs #  
 
